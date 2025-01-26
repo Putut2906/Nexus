@@ -23,6 +23,7 @@ body {
 
 .dropdown-btn:hover {
   background-color: crimson;
+  display: block;
 }
 
 .navbar-logo {
