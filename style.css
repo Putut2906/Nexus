@@ -15,6 +15,18 @@ body {
   box-shadow: #222;
 }
 
+.dropdown-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover {
+  background-color: #3e8e41;
+}
+
 .navbar-logo {
   max-width: 100px;
   border-radius: 50px;
