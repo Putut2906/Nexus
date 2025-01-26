@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Tentukan jalur navbar.html
   const navbarPath = location.pathname.includes("pages")
-    ? "../../navbar.html"
+    ? "navbar.html"
     : "navbar.html";
 
   // Memuat konten navbar
