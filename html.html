@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../Atribut/title2.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <!-- Placeholder untuk navbar -->
+    <header id="navbar"></header>
+    <!-- Muat Navbar -->
+    <script src="../../navbar.js"></script>
+    <script>
+        function copyCode() {
+    const codeBlock = document.getElementById('code-block');
+    const text = codeBlock.innerText; // Mengambil teks dari elemen pre
+    
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        alert('Kode berhasil disalin ke clipboard!');
+      })
+      .catch((err) => {
+        alert('Gagal menyalin kode: ' + err);
+      });
+  }
+    </script>
+    <script src="../../navbar.js"></script>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  nav {
+    background: #0077b6;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: crimson;
+    padding: 5px 5px;
+  }
+  main {
+    padding: 20px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  h1, h2 {
+    color: #0077b6;
+  }
+  footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .code {
+    position: relative;
+    width: 400px;;
+      margin: 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #000000;
+      color: #f4f4f9;
+  }
+  .code .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      background-color: #474747;
+      border-bottom: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .code .header .btn-copy {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 3px 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .code .header .btn-copy:hover {
+      background-color: #0056b3;
+    }
+    .code pre {
+      margin: 0;
+      padding: 0px;
+      overflow: auto;
+      max-height: 300px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      white-space: pre;
+    }
+  ul {
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="#pengertian-html">Pengertian HTML</a>
+  <a href="#struktur-html">Struktur Dasar HTML</a>
+  <a href="#elemen-html">Elemen HTML Penting</a>
+  <a href="#atribut-html">Atribut HTML</a>
+  <a href="#contoh-lengkap">Contoh HTML Lengkap</a>
+  <a href="#latihan">Latihan</a>
+</nav>
+<main>
+  <section id="pengertian-html">
+    <h2>Pengertian HTML</h2>
+    <p style="text-align: justify; text-indent: 40px;" >HTML, singkatan dari <strong>HyperText Markup Language</strong>, adalah bahasa markup standar yang digunakan untuk membuat dan menyusun halaman web. HTML bukan bahasa pemrograman karena tidak memiliki logika pemrograman seperti variabel atau fungsi, melainkan merupakan bahasa markup yang digunakan untuk mengatur struktur dan elemen-elemen dalam dokumen web.</p><p style="text-align: justify; text-indent: 40px;">HTML digunakan untuk mendefinisikan struktur konten pada halaman web. Setiap elemen HTML ditulis menggunakan <strong>tag</strong>, yang biasanya memiliki bentuk seperti ini: <tag>...</tag>. Tag terdiri dari tanda kurung sudut <strong>(< >)</strong> dan nama elemen, serta biasanya diikuti oleh konten atau atribut tertentu.</p><p style="text-align: justify; text-indent: 40px;">Secara keseluruhan, fungsi HTML adalah membangun struktur dasar dari halaman web, menampilkan konten, dan memungkinkan integrasi dengan teknologi lainnya. Tanpa HTML, halaman web modern tidak dapat dibuat atau ditampilkan di browser. Sebagai bahasa markup standar, HTML adalah fondasi untuk pengembangan web yang lebih lanjut.</p>
+  </section>
+  <section id="struktur-html">
+    <h2>Struktur Dasar HTML</h2>
+    <p style="text-align: justify; text-indent: 40px;">Struktur dasar HTML adalah rangkaian elemen yang membentuk halaman web. Setiap elemen memiliki tujuan tertentu dan ditulis dalam format tag. Berikut adalah penjelasan lengkap tentang struktur dasar HTML:</p></section>
+    <div class="code">
+      <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+        <pre id="code-block">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&nbsp;&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Judul Halaman&lt;/title&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;
+&nbsp;&nbsp;&lt;/head&gt;
+&nbsp;&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Selamat Datang di Halaman Web&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Konten Utama&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ini adalah paragraf pertama dari konten utama halaman web.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&amp;copy; 2025 Nama Perusahaan. All rights reserved.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/footer&gt;
+&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt</pre>
+    </div>
+      </div>
+
+<section>
+<ul>
+  <li style="text-align: justify;"><strong>&lt;!DOCTYPE html&gt;</strong>Ini adalah deklarasi tipe dokumen yang memberi tahu browser bahwa dokumen ini adalah HTML5.</li>
+  <li style="text-align: justify;"><strong>&lt;html&gt;</strong> Elemen ini merupakan elemen root dari sebuah halaman web. Semua elemen HTML lainnya akan berada di dalam elemen <strong>&lt;html&gt;</strong></li> 
+  <li style="text-align: justify;"><strong>&lt;head&gt;</strong> Bagian ini berisi informasi metadata tentang halaman, seperti judul halaman, penghubung ke file CSS, skrip JavaScript, dan informasi lainnya yang tidak ditampilkan langsung di halaman web. Beberapa tag dalam bagian <strong>&lt;head&gt; </strong>meliputi:</li>
+  <ol>
+    <li><strong>&lt;title&gt; </strong>Menentukan judul halaman yang muncul di tab browser.</li>
+    <li><strong>&lt;meta&gt;</strong> Memberikan informasi tentang karakter encoding atau deskripsi halaman.</li>
+    <li><strong>&lt;link&gt;</strong> Menghubungkan file eksternal, seperti file CSS.</li>
+    <li><strong>&lt;script&gt;</strong> Menyisipkan kode JavaScript</li>
+  </ol>
+  <li style="text-align: justify;"><strong>&lt;body&gt;</strong> Bagian ini berisi konten yang akan ditampilkan di halaman web. Semua elemen yang terlihat oleh pengguna berada di dalam elemen &lt;body&gt;, seperti teks, gambar, tabel, dan formulir. Struktur Konten dalam <strong>&lt;body&gt;</strong> ada berbagai elemen yang dapat digunakan untuk menyusun konten halaman. Beberapa elemen dasar yang sering digunakan </li>
+<ol>
+  <li><strong>&lt;h1&gt;</strong><strong> hingga &lt;h6&gt;</strong>Tag header untuk membuat judul, dengan &lt;h1&gt; sebagai yang terbesar</li>
+  <li><strong>&lt;p&gt;</strong> Digunakan untuk paragraf.</li>
+  <li><strong>&lt;a&gt;</strong> Untuk membuat hyperlink</li>
+  <li><strong>&lt;img&gt;</strong> Menyisipkan gambar.</li>
+  <li><strong>&lt;ul&gt;, &lt;ol&gt;, dan &lt;li&gt;</strong> : Untuk membuat daftar tidak berurutan (unordered list) atau berurutan (ordered list).</li>
+  <li><strong>&lt;div&gt;</strong> Digunakan untuk membungkus atau mengelompokkan elemen-elemen lainnya.</li>
+  <li><strong>&lt;span&gt;</strong> Digunakan untuk membungkus elemen inline, seperti teks.</li>
+</ol>
+</ul>
+</section>
+  <section id="elemen-html">
+    <h2>Elemen HTML Penting</h2>
+    <p>HTML terdiri dari elemen-elemen yang dibuka dengan tag pembuka dan diakhiri dengan tag penutup (kecuali elemen tertentu). Contoh:</p>
+    <div class="code">
+      &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+    </div>
+    <p>Berikut adalah elemen penting dalam HTML:</p>
+    <ul>
+      <li><strong>&lt;h1&gt; hingga &lt;h6&gt;:</strong> Untuk heading atau judul. Heading &lt;h1&gt; adalah yang terbesar, sedangkan &lt;h6&gt; adalah yang terkecil.</li>
+      <li><strong>&lt;p&gt;:</strong> Untuk membuat paragraf.</li>
+      <li><strong>&lt;a&gt;:</strong> Untuk membuat tautan. Contoh:
+        <div class="code">
+          &lt;a href="https://www.example.com"&gt;Klik di sini&lt;/a&gt;
+        </div>
+      </li>
+      <li><strong>&lt;img&gt;:</strong> Untuk menampilkan gambar. Contoh:
+        <div class="code">
+          &lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;
+        </div>
+      </li>
+      <li><strong>&lt;ul&gt; dan &lt;li&gt;:</strong> Untuk membuat daftar tidak berurutan (bulleted list).</li>
+      <li><strong>&lt;ol&gt; dan &lt;li&gt;:</strong> Untuk membuat daftar berurutan (numbered list).</li>
+      <li><strong>&lt;nav&gt;:</strong> Untuk membuat navigasi di halaman web. Navigasi biasanya berisi tautan ke berbagai bagian atau halaman. Contoh:
+        <div class="code">
+          &lt;nav&gt;<br>
+          &nbsp;&nbsp;&lt;a href="#home"&gt;Home&lt;/a&gt;<br>
+          &nbsp;&nbsp;&lt;a href="#about"&gt;About&lt;/a&gt;<br>
+          &nbsp;&nbsp;&lt;a href="#contact"&gt;Contact&lt;/a&gt;<br>
+          &lt;/nav&gt;
+        </div>
+      </li>
+      <li><strong>&lt;div&gt;:</strong> Elemen pembungkus (container) yang digunakan untuk mengelompokkan elemen-elemen lain. Elemen ini tidak memiliki gaya bawaan, tetapi sangat fleksibel untuk diatur dengan CSS. Contoh:
+        <div class="code">
+          &lt;div class="konten"&gt;<br>
+          &nbsp;&nbsp;&lt;p&gt;Ini adalah paragraf di dalam div.&lt;/p&gt;<br>
+          &nbsp;&nbsp;&lt;img src="gambar.jpg" alt="Gambar di dalam div"&gt;<br>
+          &lt;/div&gt;
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section id="atribut-html">
+    <h2>Atribut HTML</h2>
+    <p>Atribut memberikan informasi tambahan pada elemen HTML. Contoh atribut yang umum:</p>
+    <ul>
+      <li><strong>href</strong>: Menentukan tujuan tautan pada elemen &lt;a&gt;. Contoh:
+        <div class="code">
+          &lt;a href="https://example.com"&gt;Tautan&lt;/a&gt;
+        </div>
+      </li>
+      <li><strong>src</strong>: Menentukan sumber gambar pada elemen &lt;img&gt;. Contoh:
+        <div class="code">
+          &lt;img src="gambar.jpg" alt="Gambar contoh"&gt;
+        </div>
+      </li>
+      <li><strong>alt</strong>: Menambahkan teks alternatif pada elemen &lt;img&gt;.</li>
+      <li><strong>style</strong>: Menambahkan gaya langsung ke elemen. Contoh:
+        <div class="code">
+          &lt;p style="color: red;"&gt;Teks merah&lt;/p&gt;
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Panduan Belajar HTML Lengkap
+</footer>
+</body>

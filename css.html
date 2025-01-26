@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../Atribut/title2.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <!-- Placeholder untuk navbar -->
+    <header id="navbar"></header>
+    <!-- Muat Navbar -->
+    <script src="../../navbar.js"></script>
+  </body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3 {
+        color: #00509e;
+    }
+
+    .code {
+        background: #e8f0fe;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        overflow-x: auto;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+<h1>Belajar CSS Dasar</h1>
+
+<div class="section">
+    <h2>Apa Itu CSS?</h2>
+    <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan elemen HTML. Dengan CSS, Anda dapat mengatur warna, font, layout, dan banyak lagi.</p>
+    <p>CSS membantu memisahkan konten (HTML) dari tampilan sehingga membuat halaman web lebih mudah dikelola dan diperbarui.</p>
+</div>
+
+<div class="section">
+    <h2>Menambahkan CSS ke HTML</h2>
+    <p>Ada tiga cara menambahkan CSS ke dokumen HTML:</p>
+    <ol>
+        <li><strong>Inline CSS:</strong> Langsung di atribut elemen HTML.</li>
+        <li><strong>Internal CSS:</strong> Di dalam elemen <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code>.</li>
+        <li><strong>External CSS:</strong> Menggunakan file terpisah dengan ekstensi <code>.css</code>.</li>
+    </ol>
+    <div class="code">
+        Contoh Inline CSS:
+        <pre>&lt;p style="color: red;"&gt;Teks berwarna merah&lt;/p&gt;</pre>
+
+        Contoh Internal CSS:
+        <pre>&lt;style&gt;
+p {
+color: blue;
+}
+&lt;/style&gt;</pre>
+
+        Contoh External CSS:
+        <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Selektor dalam CSS</h2>
+    <p>Selektor digunakan untuk memilih elemen HTML yang ingin diberi gaya.</p>
+    <ul>
+        <li><strong>Selektor Universal:</strong> <code>*</code> - Memilih semua elemen.</li>
+        <li><strong>Selektor Tag:</strong> <code>p</code> - Memilih semua elemen <code>&lt;p&gt;</code>.</li>
+        <li><strong>Selektor Class:</strong> <code>.nama-class</code> - Memilih elemen dengan atribut <code>class</code> tertentu.</li>
+        <li><strong>Selektor ID:</strong> <code>#nama-id</code> - Memilih elemen dengan atribut <code>id</code> tertentu.</li>
+        <li><strong>Selektor Grup:</strong> <code>h1, h2, p</code> - Memilih beberapa elemen sekaligus.</li>
+    </ul>
+    <div class="code">
+        Contoh Selektor Class:
+        <pre>.highlight {
+background-color: yellow;
+font-weight: bold;
+}</pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Properti CSS Dasar</h2>
+    <p>Beberapa properti dasar dalam CSS:</p>
+    <ul>
+        <li><strong>color:</strong> Mengatur warna teks.</li>
+        <li><strong>background-color:</strong> Mengatur warna latar belakang.</li>
+        <li><strong>font-size:</strong> Mengatur ukuran teks.</li>
+        <li><strong>font-family:</strong> Mengatur jenis huruf.</li>
+        <li><strong>margin:</strong> Mengatur jarak luar elemen.</li>
+        <li><strong>padding:</strong> Mengatur jarak dalam elemen.</li>
+        <li><strong>border:</strong> Mengatur batas elemen.</li>
+    </ul>
+    <div class="code">
+        Contoh:
+        <pre>h1 {
+color: blue;
+background-color: lightgray;
+font-size: 24px;
+padding: 10px;
+border: 2px solid black;
+}</pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Model Box CSS</h2>
+    <p>Setiap elemen HTML dapat dianggap sebagai sebuah kotak yang terdiri dari:</p>
+    <ul>
+        <li><strong>Content:</strong> Isi dari elemen (teks, gambar, dll).</li>
+        <li><strong>Padding:</strong> Ruang di sekitar konten.</li>
+        <li><strong>Border:</strong> Batas di sekitar padding (opsional).</li>
+        <li><strong>Margin:</strong> Ruang di luar border.</li>
+    </ul>
+    <div class="code">
+        Contoh Model Box:
+        <pre>.box {
+width: 200px;
+padding: 20px;
+border: 5px solid black;
+margin: 10px;
+}</pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Tips dan Trik</h2>
+    <ul>
+        <li>Gunakan <code>developer tools</code> di browser untuk memeriksa elemen dan menguji CSS secara langsung.</li>
+        <li>Gunakan <a href="https://css-tricks.com" target="_blank">CSS-Tricks</a> untuk referensi dan tutorial.</li>
+        <li>Jangan lupa menambahkan komentar dalam kode CSS Anda untuk mempermudah pemahaman.</li>
+    </ul>
+</div>
+
+<footer>
+    &copy; 2025 Belajar CSS Dasar | Semua hak dilindungi
+</footer>
+</body>

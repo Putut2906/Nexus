@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/title2.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Placeholder untuk navbar -->
+    <header id="navbar"></header>
+
+    <main>
+      <h1>Belajar HTML</h1>
+      <p>Ini adalah halaman belajar HTML.</p>
+    </main>
+
+    <!-- Muat Navbar -->
+    <script src="navbar.js"></script>
+  </body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0px;
+        padding: 0;
+        background-color: #f4f4f9;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    code {
+        background-color: #eee;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+    pre {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Belajar JavaScript</h1>
+    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif. Berikut ini adalah materi dasar untuk belajar JavaScript:</p>
+
+    <h2>1. Menampilkan Output</h2>
+    <p>Kode JavaScript dapat dijalankan di browser menggunakan konsol, file eksternal, atau langsung di dalam HTML menggunakan tag <code>&lt;script&gt;</code>.</p>
+    <pre><code>// Cara menampilkan output di JavaScript
+console.log('Hello, world!'); // Menampilkan di konsol
+alert('Hello, world!');      // Menampilkan pop-up
+</code></pre>
+
+    <h2>2. Variabel</h2>
+    <p>Variabel digunakan untuk menyimpan data. JavaScript memiliki tiga cara untuk mendeklarasikan variabel: <code>var</code>, <code>let</code>, dan <code>const</code>.</p>
+    <pre><code>// Deklarasi variabel
+let nama = 'Putut';
+const umur = 25;
+var kota = 'Jakarta';
+</code></pre>
+
+    <h2>3. Tipe Data</h2>
+    <p>JavaScript mendukung beberapa tipe data seperti:</p>
+    <ul>
+        <li><strong>String</strong>: "Halo Dunia"</li>
+        <li><strong>Number</strong>: 123, 4.56</li>
+        <li><strong>Boolean</strong>: true, false</li>
+        <li><strong>Array</strong>: [1, 2, 3]</li>
+        <li><strong>Object</strong>: { nama: 'Putut', umur: 25 }</li>
+    </ul>
+
+    <h2>4. Fungsi</h2>
+    <p>Fungsi adalah blok kode yang dapat digunakan kembali. Fungsi dideklarasikan menggunakan kata kunci <code>function</code>.</p>
+    <pre><code>// Fungsi sederhana
+function sapa(nama) {
+return `Halo, ${nama}!`;
+}
+
+console.log(sapa('Putut'));
+</code></pre>
+
+    <h2>5. Event Handling</h2>
+    <p>JavaScript dapat digunakan untuk menangani berbagai event seperti klik tombol.</p>
+    <pre><code>// Contoh Event Handling
+<button id="myButton">Klik Saya</button>
+<script>
+const button = document.getElementById('myButton');
+button.addEventListener('click', function() {
+    alert('Tombol diklik!');
+});
+</script>
+</code></pre>
+
+    <h2>6. DOM Manipulation</h2>
+    <p>Document Object Model (DOM) memungkinkan JavaScript untuk memodifikasi struktur HTML.</p>
+    <pre><code>// Mengubah teks pada elemen HTML
+const heading = document.querySelector('h1');
+heading.textContent = 'Belajar JavaScript itu Seru!';
+</code></pre>
+
+    <h2>7. Looping</h2>
+    <p>Gunakan <code>for</code>, <code>while</code>, atau <code>do-while</code> untuk melakukan iterasi.</p>
+    <pre><code>// Contoh looping
+for (let i = 0; i < 5; i++) {
+console.log(`Iterasi ke-${i}`);
+}
+</code></pre>
+
+    <h2>8. Kondisional</h2>
+    <p>Gunakan <code>if</code>, <code>else</code>, atau <code>switch</code> untuk membuat logika percabangan.</p>
+    <pre><code>// Contoh kondisional
+let umur = 18;
+if (umur >= 18) {
+console.log('Anda sudah dewasa');
+} else {
+console.log('Anda masih anak-anak');
+}
+</code></pre>
+
+    <p>Selamat belajar JavaScript! Semoga sukses!</p>
+</div>
+</body>

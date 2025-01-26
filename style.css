@@ -1,0 +1,117 @@
+/* Gaya umum */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: lightslategrey;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #222;
+  color: white;
+  box-shadow: #222;
+}
+
+.navbar-logo {
+  max-width: 100px;
+  border-radius: 50px;
+}
+
+.navbar-group {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  position: relative;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+
+.navbar-item > a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.navbar-item > a:hover {
+  background-color: crimson;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-down {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.navbar-item:hover .navbar-down {
+  display: block;
+}
+
+.navbar-item-view a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 5px 10px;
+}
+
+.navbar-item-view a:hover {
+  background-color: crimson;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-action {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-action button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navbar-action button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-item {
+    margin: 5px 0;
+  }
+  .navbar-action {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.navigation > li > a:hover {
+  color: rgb(8, 115, 187);
+  transition: all 0.3s ease-in-out;
+}
