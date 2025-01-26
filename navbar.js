@@ -26,3 +26,10 @@ const favicon = document.createElement("link");
 favicon.rel = "icon";
 favicon.href = "/images/title2.png"; // Ganti dengan path logo Anda
 document.head.appendChild(favicon);
+
+
+document.querySelector('.dropdown-btn').addEventListener('click', function (e) {
+  e.preventDefault(); // Cegah aksi default (jika button memiliki tautan)
+  const dropdownContent = document.querySelector('.dropdown-content');
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
