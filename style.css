@@ -15,17 +15,6 @@ body {
   box-shadow: #222;
 }
 
-.dropdown-btn {
-  background-color: crimson;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-}
-
-.dropdown-btn:hover {
-  background-color: crimson;
-  transition: all 0.3s ease-in-out;
-}
-
 .navbar-logo {
   max-width: 100px;
   border-radius: 50px;
