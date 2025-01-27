@@ -5,6 +5,10 @@ body {
   background-color: lightslategrey;
 }
 
+.button {
+  backgrund color : red;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
