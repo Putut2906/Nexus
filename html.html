@@ -8,7 +8,6 @@
     <link rel="icon" href="images/title2.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <base href="https://Putut2906.github.io/Nexus/">
   </head>
   <body>
     <!-- Placeholder untuk navbar -->
@@ -42,11 +41,6 @@
     background-color: #f4f4f9;
     color: #333;
   }
-  nav {
-    background: #0077b6;
-    padding: 10px;
-    text-align: center;
-  }
   nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -66,10 +60,10 @@
     margin-bottom: 30px;
   }
   h1, h2 {
-    color: #0077b6;
+    color: #000305;
   }
   footer {
-    background: #023e8a;
+    background: #00060e;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -121,14 +115,6 @@
 </style>
 </head>
 <body>
-<nav>
-  <a href="#pengertian-html">Pengertian HTML</a>
-  <a href="#struktur-html">Struktur Dasar HTML</a>
-  <a href="#elemen-html">Elemen HTML Penting</a>
-  <a href="#atribut-html">Atribut HTML</a>
-  <a href="#contoh-lengkap">Contoh HTML Lengkap</a>
-  <a href="#latihan">Latihan</a>
-</nav>
 <main>
   <section id="pengertian-html">
     <h2>Pengertian HTML</h2>
@@ -189,7 +175,6 @@
         </pre>
     </div>
       </div>
-
 <section>
 <ul>
   <li style="text-align: justify;"><strong>&lt;!DOCTYPE html&gt;</strong>Ini adalah deklarasi tipe dokumen yang memberi tahu browser bahwa dokumen ini adalah HTML5.</li>
@@ -197,87 +182,162 @@
   <li style="text-align: justify;"><strong>&lt;head&gt;</strong> Bagian ini berisi informasi metadata tentang halaman, seperti judul halaman, penghubung ke file CSS, skrip JavaScript, dan informasi lainnya yang tidak ditampilkan langsung di halaman web. Beberapa tag dalam bagian <strong>&lt;head&gt; </strong>meliputi:</li>
   <ol>
     <li><strong>&lt;title&gt; </strong>Menentukan judul halaman yang muncul di tab browser.</li>
-    <li><strong>&lt;meta&gt;</strong> Memberikan informasi tentang karakter encoding atau deskripsi halaman.</li>
+    <li><strong>&lt;meta&gt;</strong> yaitu Memberikan informasi tentang karakter encoding atau deskripsi halaman. &lt;meta&gt; terdiri : <ul>
+      <li><strong>&lt;meta charset="UTF-8"&gt; : </strong>Mengatur encoding karakter (UTF-8 mendukung semua bahasa).</li>
+      <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; : </strong>Mengatur responsivitas pada perangkat yang berbeda.</li>
+      <li><strong>&lt;meta name="description" content="..."&gt; : </strong>Menyediakan deskripsi halaman untuk SEO.</li>
+    </ul></li>
     <li><strong>&lt;link&gt;</strong> Menghubungkan file eksternal, seperti file CSS.</li>
     <li><strong>&lt;script&gt;</strong> Menyisipkan kode JavaScript</li>
   </ol>
-  <li style="text-align: justify;"><strong>&lt;body&gt;</strong> Bagian ini berisi konten yang akan ditampilkan di halaman web. Semua elemen yang terlihat oleh pengguna berada di dalam elemen &lt;body&gt;, seperti teks, gambar, tabel, dan formulir. Struktur Konten dalam <strong>&lt;body&gt;</strong> ada berbagai elemen yang dapat digunakan untuk menyusun konten halaman. Beberapa elemen dasar yang sering digunakan </li>
-<ol>
-  <li><strong>&lt;h1&gt;</strong><strong> hingga &lt;h6&gt;</strong>Tag header untuk membuat judul, dengan &lt;h1&gt; sebagai yang terbesar</li>
-  <li><strong>&lt;p&gt;</strong> Digunakan untuk paragraf.</li>
-  <li><strong>&lt;a&gt;</strong> Untuk membuat hyperlink</li>
-  <li><strong>&lt;img&gt;</strong> Menyisipkan gambar.</li>
-  <li><strong>&lt;ul&gt;, &lt;ol&gt;, dan &lt;li&gt;</strong> : Untuk membuat daftar tidak berurutan (unordered list) atau berurutan (ordered list).</li>
-  <li><strong>&lt;div&gt;</strong> Digunakan untuk membungkus atau mengelompokkan elemen-elemen lainnya.</li>
-  <li><strong>&lt;span&gt;</strong> Digunakan untuk membungkus elemen inline, seperti teks.</li>
-</ol>
+  <li style="text-align: justify;"><strong>&lt;body&gt;</strong> Bagian ini berisi konten yang akan ditampilkan di halaman web. Semua elemen yang terlihat oleh pengguna berada di dalam elemen &lt;body&gt;, seperti teks, gambar, tabel, dan formulir. Struktur Konten dalam <strong>&lt;body&gt;</strong> ada berbagai elemen yang dapat digunakan untuk menyusun konten halaman. <br> 
+    </li>
 </ul>
 </section>
-  <section id="elemen-html">
-    <h2>Elemen HTML Penting</h2>
-    <p>HTML terdiri dari elemen-elemen yang dibuka dengan tag pembuka dan diakhiri dengan tag penutup (kecuali elemen tertentu). Contoh:</p>
-    <div class="code">
-      &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+
+<section>
+  <h1>Elemen Heading dan Teks</h1>
+  <ol>Beberapa elemen dasar yang sering digunakan 
+    <li><strong>&lt;h1&gt;</strong><strong> hingga &lt;h6&gt; : </strong>Untuk membuat heading (judul), dari yang paling penting &lt;h1&gt; hingga &lt;h6&gt;.</li>
+    <li><strong>&lt;p&gt;</strong> Digunakan untuk membuat paragraf.</li>
+    <li><strong>&lt;br&gt; : </strong>Menambahkan baris baru di dalam teks.</li>
+    <li><strong>&lt;hr&gt; : </strong>Menyisipkan garis horizontal sebagai pemisah.</li>
+    <li><strong>&lt;strong&gt; : </strong>untuk teks yang penting (dicetak tebal)</li>
+    <li><strong>&lt;em&gt; : </strong>untuk teks yang diberi penekanan (dicetak miring).</li>
+  </ol>
+</section>
+
+<section>
+  <h1>Elemen Link dan Gambar</h1>
+  <ol>
+    <li><strong>&lt;a&gt; : </strong> Membuat tautan ke halaman lain atau lokasi tertentu. Contoh:<br>&lt;a href="https://example.com"&gt;Tautan&lt;a/&gt;</li>
+    <li><strong>&lt;img&gt; : </strong>Menyisipkan gambar. Contoh : <br><strong>&lt;img src="image.jpg" alt="Deskripsi Gambar"&gt;</strong></li>
+  </ol>
+</section>
+
+<section>
+  <h1>Elemen Daftar</h1>
+  <div class="code">
+    <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+      <pre id="code-block">
+  <code>&lt;ol&gt;
+    &lt;li&gt;item 1&lt;/li&gt;<br>    &lt;li&gt;item 2&lt;/li&gt;
+  &lt;/ol&gt;</code>
+      </pre>
+  </div>
+  <li><strong>&lt;ol&gt;</strong>Membuat daftar berurutan (numbered list).</li>
     </div>
-    <p>Berikut adalah elemen penting dalam HTML:</p>
-    <ul>
-      <li><strong>&lt;h1&gt; hingga &lt;h6&gt;:</strong> Untuk heading atau judul. Heading &lt;h1&gt; adalah yang terbesar, sedangkan &lt;h6&gt; adalah yang terkecil.</li>
-      <li><strong>&lt;p&gt;:</strong> Untuk membuat paragraf.</li>
-      <li><strong>&lt;a&gt;:</strong> Untuk membuat tautan. Contoh:
-        <div class="code">
-          &lt;a href="https://www.example.com"&gt;Klik di sini&lt;/a&gt;
-        </div>
-      </li>
-      <li><strong>&lt;img&gt;:</strong> Untuk menampilkan gambar. Contoh:
-        <div class="code">
-          &lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;
-        </div>
-      </li>
-      <li><strong>&lt;ul&gt; dan &lt;li&gt;:</strong> Untuk membuat daftar tidak berurutan (bulleted list).</li>
-      <li><strong>&lt;ol&gt; dan &lt;li&gt;:</strong> Untuk membuat daftar berurutan (numbered list).</li>
-      <li><strong>&lt;nav&gt;:</strong> Untuk membuat navigasi di halaman web. Navigasi biasanya berisi tautan ke berbagai bagian atau halaman. Contoh:
-        <div class="code">
-          &lt;nav&gt;<br>
-          &nbsp;&nbsp;&lt;a href="#home"&gt;Home&lt;/a&gt;<br>
-          &nbsp;&nbsp;&lt;a href="#about"&gt;About&lt;/a&gt;<br>
-          &nbsp;&nbsp;&lt;a href="#contact"&gt;Contact&lt;/a&gt;<br>
-          &lt;/nav&gt;
-        </div>
-      </li>
-      <li><strong>&lt;div&gt;:</strong> Elemen pembungkus (container) yang digunakan untuk mengelompokkan elemen-elemen lain. Elemen ini tidak memiliki gaya bawaan, tetapi sangat fleksibel untuk diatur dengan CSS. Contoh:
-        <div class="code">
-          &lt;div class="konten"&gt;<br>
-          &nbsp;&nbsp;&lt;p&gt;Ini adalah paragraf di dalam div.&lt;/p&gt;<br>
-          &nbsp;&nbsp;&lt;img src="gambar.jpg" alt="Gambar di dalam div"&gt;<br>
-          &lt;/div&gt;
-        </div>
-      </li>
-    </ul>
+  <div class="code">
+    <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+      <pre id="code-block">
+    <code>&lt;ul&gt;
+      &lt;li&gt;item 1&lt;/li&gt;<br>    &lt;li&gt;item 2&lt;/li&gt;
+    &lt;/ul&gt;
+    </code>
+      </pre>
+  </div>
+  <li><strong>&lt;ul&gt;</strong>Membuat daftar tidak berurutan (bullet list).</li>
+    </div>
+    <li>  <strong>&lt;li&gt; : </strong>Elemen untuk setiap item dalam daftar.</li>
+</section>
+
+<section>
+  <h1>Elemen Formulir</h1>
+  <li><strong>&lt;from&gt; : </strong>Membuat formulir untuk input pengguna.</li>
+  <li><strong>&lt;input&gt; : </strong>Elemen input (teks, tombol, dll).
+    <div class="code">
+      <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+        <pre id="code-block">
+          <code>
+  Contoh : &lt;input type="text" placeholder="Nama Anda"&gt;</li>
+          </code>
+        </pre>
+    </div>
+      </div>
+  <li><strong>&lt;textarea&gt; : </strong>Membuat area teks multi-baris.</li>
+  <li><strong>&lt;button&gt; : </strong>Membuat tombol.</li>
+  <li><strong>&lt;label&gt; : </strong>Memberikan label untuk elemen input.</li>
+</section>
+
+<section>
+  <h1>Elemen Struktur Halaman</h1>
+  <ul>
+    <li><strong>&lt;header&gt; : </strong>Bagian atas halaman, seperti logo atau menu navigasi.</li>
+    <li><strong>&lt;nav&gt; : </strong>Menyimpan tautan navigasi</li>
+    <li><strong>&lt;main&gt; : </strong>Bagian utama konten halaman.</li>
+    <li><strong>&lt;section&gt; : </strong>Membagi konten ke dalam bagian tematik.
+    </li>
+    <li><strong>&lt;article&gt; : </strong>Menyimpan konten mandiri, seperti artikel atau postingan.
+    </li>
+    <li><strong>&lt;aside&gt; : </strong>Konten tambahan, seperti sidebar atau catatan.</li>
+    <li><strong>&lt;footer&gt; : </strong>Bagian bawah halaman, seperti hak cipta atau informasi kontak.</li>
+  </ul>
+</section>
+
+<section>
+  <h1>Elemen Multimedia</h1>
+  <li><strong>&lt;audio&gt; : </strong>Menyisipkan audio.
+    Contoh</li>
+  <div class="code">
+    <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+      <pre id="code-block">
+        <code>
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+        </code>
+      </pre>
+  </div>
+    </div>
+</section>
+
+<section>
+  <li><strong>&lt;vidio&gt; : </strong>Menyisipkan vidio. Contoh</li>
+  <div class="code">
+    <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+      <pre id="code-block">
+        <code>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+        </code>
+      </pre>
+  </div>
+    </div>
+</section>
+
+  <section>
+  <h1>Elemen Interaktif</h1>
+    <li><strong>&lt;script&gt; : </strong>Menyisipkan atau menghubungkan file JavaScript.</li>
+    <li><strong>&lt;details&gt; : </strong>Menyisipkan detail yang dapat diperluas (expandable).</li>
+    <li><strong>&lt;summary&gt; : </strong>Memberikan ringkasan untuk elemen &lt;summary&gt;.</li>
   </section>
-  <section id="atribut-html">
-    <h2>Atribut HTML</h2>
-    <p>Atribut memberikan informasi tambahan pada elemen HTML. Contoh atribut yang umum:</p>
-    <ul>
-      <li><strong>href</strong>: Menentukan tujuan tautan pada elemen &lt;a&gt;. Contoh:
-        <div class="code">
-          &lt;a href="https://example.com"&gt;Tautan&lt;/a&gt;
-        </div>
-      </li>
-      <li><strong>src</strong>: Menentukan sumber gambar pada elemen &lt;img&gt;. Contoh:
-        <div class="code">
-          &lt;img src="gambar.jpg" alt="Gambar contoh"&gt;
-        </div>
-      </li>
-      <li><strong>alt</strong>: Menambahkan teks alternatif pada elemen &lt;img&gt;.</li>
-      <li><strong>style</strong>: Menambahkan gaya langsung ke elemen. Contoh:
-        <div class="code">
-          &lt;p style="color: red;"&gt;Teks merah&lt;/p&gt;
-        </div>
-      </li>
-    </ul>
+
+  <section id="elemen-html">
+    <h1>Elemen Khusus</h1>
+    <li><strong>&lt;table&gt; : </strong>Membuat tabel data.
+      Contoh</li>
+    <div class="code">
+      <div class="header"><button class="btn-copy" onclick="copyCode()">Copy</button><span>HTML<span></div>
+        <pre id="code-block">
+          <code>
+    &lt;table&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Judul Kolom&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Data&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+          </code>
+        </pre>
+    </div>
+      </div>
+      <li><strong>&lt;div&gt; : </strong>Elemen pembungkus serbaguna untuk mengelompokkan konten.</li>
+      <li><strong>&lt;span&gt; : </strong>Membungkus teks untuk styling tertentu.</li>
   </section>
 </main>
 <footer>
-  &copy; 2025 Panduan Belajar HTML Lengkap
+  &copy; 2025 new Panduan Belajar HTML Lengkap
 </footer>
 </body>
